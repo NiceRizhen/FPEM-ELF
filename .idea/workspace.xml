@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f513b4e-5806-4404-81d6-84ff75b26043" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/atari/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/atari/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/atari/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/atari_game.cc" beforeDir="false" afterPath="$PROJECT_DIR$/atari/atari_game.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/atari_game.h" beforeDir="false" afterPath="$PROJECT_DIR$/atari/atari_game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/atari_game_specific.h" beforeDir="false" afterPath="$PROJECT_DIR$/atari/atari_game_specific.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/benchmark-ale.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/atari/benchmark-ale.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/benchmark-atari.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/atari/benchmark-atari.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/benchmark-atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/atari/benchmark-atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/benchmark-gym.py" beforeDir="false" afterPath="$PROJECT_DIR$/atari/benchmark-gym.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/atari/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/game_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/atari/game_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/atari/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/python_wrapper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/atari/python_wrapper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atari/timer.hh" beforeDir="false" afterPath="$PROJECT_DIR$/atari/timer.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console_df.sh" beforeDir="false" afterPath="$PROJECT_DIR$/console_df.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console_df_check_train.sh" beforeDir="false" afterPath="$PROJECT_DIR$/console_df_check_train.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console_df_mcts.sh" beforeDir="false" afterPath="$PROJECT_DIR$/console_df_mcts.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/df_console.py" beforeDir="false" afterPath="$PROJECT_DIR$/df_console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/df_selfplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/df_selfplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/df_selfplay.sh" beforeDir="false" afterPath="$PROJECT_DIR$/df_selfplay.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/RTS-engine.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/RTS-engine.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/methods.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/methods.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/rlpytorch.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/rlpytorch.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/runner.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/runner.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/sampler.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/sampler.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/stats.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/stats.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/trainer.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/trainer.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/utils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/utils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/wrapper-python.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/wrapper-python.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/wrapper.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/wrapper.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/elf/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/ai_comm.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/ai_comm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/circular_queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/circular_queue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/collector.hh" beforeDir="false" afterPath="$PROJECT_DIR$/elf/collector.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/comm_template.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/comm_template.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/compile_test_mcts.sh" beforeDir="false" afterPath="$PROJECT_DIR$/elf/compile_test_mcts.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/context_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf/context_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/copier.hh" beforeDir="false" afterPath="$PROJECT_DIR$/elf/copier.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/ctpl_stl.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/ctpl_stl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/game_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/game_base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/hist.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/hist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/lib/debugutils.cc" beforeDir="false" afterPath="$PROJECT_DIR$/elf/lib/debugutils.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/lib/debugutils.hh" beforeDir="false" afterPath="$PROJECT_DIR$/elf/lib/debugutils.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/lib/strutils.cc" beforeDir="false" afterPath="$PROJECT_DIR$/elf/lib/strutils.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/lib/strutils.hh" beforeDir="false" afterPath="$PROJECT_DIR$/elf/lib/strutils.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/mcts.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/mcts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/member_check.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/member_check.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/more_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf/more_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/primitive.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/primitive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/pybind_helper.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/pybind_helper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/pybind_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/pybind_interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/python_options_utils_cpp.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/python_options_utils_cpp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/replay_loader.cc" beforeDir="false" afterPath="$PROJECT_DIR$/elf/replay_loader.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/replay_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/replay_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/shared_buffer.hh" beforeDir="false" afterPath="$PROJECT_DIR$/elf/shared_buffer.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/shared_replay_buffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/shared_replay_buffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/signal.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/signal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/state_collector.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/state_collector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/stats.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/stats.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tar_loader.cc" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tar_loader.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tar_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tar_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/test_tree_search.cc" beforeDir="false" afterPath="$PROJECT_DIR$/elf/test_tree_search.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tree_search.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tree_search.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tree_search_alg.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tree_search_alg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tree_search_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tree_search_base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tree_search_node.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tree_search_node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/tree_search_options.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/tree_search_options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/elf/utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf/utils_elf.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf/utils_elf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/GCWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/GCWrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/assembler.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/assembler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/circular_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/circular_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/memory_receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/memory_receiver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/offline_assembler.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/offline_assembler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/replier.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/replier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elf_python/zmq_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/elf_python/zmq_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_atari.sh" beforeDir="false" afterPath="$PROJECT_DIR$/eval_atari.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_checkforward.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_checkforward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_minirts.sh" beforeDir="false" afterPath="$PROJECT_DIR$/eval_minirts.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_minirts2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/eval_minirts2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_reduced_mcts.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_reduced_mcts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_selfplay_aivsai.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_selfplay_aivsai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex_elfpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_elfpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/go/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/board.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/board.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/board_feature.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/board_feature.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/board_feature.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/board_feature.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/common.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/common.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/df_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/go/df_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/df_model2.py" beforeDir="false" afterPath="$PROJECT_DIR$/go/df_model2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/game.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/game.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/go/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/game_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/game_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/go_ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/go_ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/go_game_specific.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/go_game_specific.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/go_state.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/go_state.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/go_state.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/go_state.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/mcts.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/mcts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/multiple_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/go/multiple_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/offpolicy_loader.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/offpolicy_loader.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/offpolicy_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/offpolicy_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/python_wrapper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/python_wrapper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/sample1.sgf" beforeDir="false" afterPath="$PROJECT_DIR$/go/sample1.sgf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/sgf.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/sgf.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/sgf.h" beforeDir="false" afterPath="$PROJECT_DIR$/go/sgf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/test_sgf.cc" beforeDir="false" afterPath="$PROJECT_DIR$/go/test_sgf.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/train.lst" beforeDir="false" afterPath="$PROJECT_DIR$/go/train.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/args_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/args_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/actor_critic.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/actor_critic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/discounted_reward.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/discounted_reward.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/policy_gradient.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/policy_gradient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/q_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/q_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/rnn_actor_critic.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/rnn_actor_critic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/methods/value_matcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/methods/value_matcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/model_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/model_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/model_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/model_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/model_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/model_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/runner/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/runner/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/runner/eval_iters.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/runner/eval_iters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/runner/multi_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/runner/multi_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/runner/parameter_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/runner/parameter_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/runner/single_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/runner/single_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/sampler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/sampler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/sampler/sample_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/sampler/sample_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/sampler/sampler.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/sampler/sampler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/stats/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/stats/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/stats/stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/stats/stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/trainer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/trainer/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/trainer/lstm_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/trainer/lstm_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/trainer/timer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/trainer/timer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/trainer/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/trainer/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/trainer/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/trainer/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/utils/hist_states.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/utils/hist_states.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/utils/size_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/utils/size_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlpytorch/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlpytorch/utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/rts/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rts/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/comm_ai.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/comm_ai.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/comm_ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/comm_ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/main_loop.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/main_loop.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/raw2cmd.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/raw2cmd.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/raw2cmd.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/raw2cmd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/save2json.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/save2json.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/backend/save2json.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/backend/save2json.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/.ropeproject/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/.ropeproject/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/ai.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/ai.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/bullet.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/bullet.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/bullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/bullet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd.def" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_receiver.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_receiver.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_receiver.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_receiver.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_specific.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_specific.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_specific.def" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_specific.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_util.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/cmd_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/cmd_util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/common_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/common_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/compile_cmds.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/compile_cmds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/custom_enum.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/custom_enum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_action.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_action.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_env.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_env.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_env.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_env.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_new.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_new.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_options.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_state.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_state.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_state.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_state.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/game_stats.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/game_stats.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/gamedef.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/gamedef.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/gamedef.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/gamedef.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/locality_search.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/locality_search.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/map.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/map.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/map.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/map.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/player.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/player.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/pq_extend.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/pq_extend.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/python_common_options.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/python_common_options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/replay_loader.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/replay_loader.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/replay_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/replay_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/rule_actor.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/rule_actor.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/rule_actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/rule_actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/serializer.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/serializer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/ui_cmd.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/ui_cmd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/unit.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/unit.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/unit.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/unit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/engine/wrapper_template.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/engine/wrapper_template.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/frontend/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/rts/frontend/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/frontend/minirts.html" beforeDir="false" afterPath="$PROJECT_DIR$/rts/frontend/minirts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/ai.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/ai.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/cf_rule_actor.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/cf_rule_actor.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/cf_rule_actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/cf_rule_actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/cmd_specific.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/cmd_specific.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/cmd_specific.def" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/cmd_specific.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/gamedef.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/gamedef.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/python_options.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/python_options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/python_wrapper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/python_wrapper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/wrapper_callback.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/wrapper_callback.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_CF/wrapper_callback.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_CF/wrapper_callback.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/actor_critic_changed.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/actor_critic_changed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/cmd_specific.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/cmd_specific.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/cmd_specific.def" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/cmd_specific.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/collect_rep_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/collect_rep_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/forward_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/forward_predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/game_action.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/game_action.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/game_action.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/game_action.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/gamedef.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/gamedef.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/mc_rule_actor.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/mc_rule_actor.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/mc_rule_actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/mc_rule_actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/mcts.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/mcts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/mixed_ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/mixed_ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/model_lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/model_lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/model_unit_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/model_unit_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/python_options.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/python_options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/python_wrapper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/python_wrapper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/reduced_ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/reduced_ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/rule_ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/rule_ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/state_feature.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/state_feature.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/state_feature.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/state_feature.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/trainable_ai.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/trainable_ai.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/trainable_ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/trainable_ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/trunk.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/trunk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/wrapper_callback.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/wrapper_callback.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_MC/wrapper_callback.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_MC/wrapper_callback.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/ai.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/ai.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/ai.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/ai.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/cmd_specific.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/cmd_specific.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/cmd_specific.def" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/cmd_specific.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/gamedef.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/gamedef.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/python_options.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/python_options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/python_wrapper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/python_wrapper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/td_rule_actor.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/td_rule_actor.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/td_rule_actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/td_rule_actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/wrapper_callback.cc" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/wrapper_callback.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rts/game_TD/wrapper_callback.h" beforeDir="false" afterPath="$PROJECT_DIR$/rts/game_TD/wrapper_callback.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/selfplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfplay_aivsai.sh" beforeDir="false" afterPath="$PROJECT_DIR$/selfplay_aivsai.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfplay_minirts.sh" beforeDir="false" afterPath="$PROJECT_DIR$/selfplay_minirts.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_atari.sh" beforeDir="false" afterPath="$PROJECT_DIR$/train_atari.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_df.sh" beforeDir="false" afterPath="$PROJECT_DIR$/train_df.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_minirts.sh" beforeDir="false" afterPath="$PROJECT_DIR$/train_minirts.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_minirts_unitcmd.sh" beforeDir="false" afterPath="$PROJECT_DIR$/train_minirts_unitcmd.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/LICENSE-asio" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/LICENSE-asio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/LICENSE-concurrentqueue.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/LICENSE-concurrentqueue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/LICENSE-json.MIT" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/LICENSE-json.MIT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/LICENSE-websocketpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/LICENSE-websocketpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/async_result.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/async_result.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_datagram_socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_datagram_socket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_deadline_timer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_deadline_timer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_io_object.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_io_object.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_raw_socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_raw_socket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_seq_packet_socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_seq_packet_socket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_serial_port.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_serial_port.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_signal_set.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_signal_set.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_socket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_socket_acceptor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_socket_acceptor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_socket_iostream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_socket_iostream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_socket_streambuf.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_socket_streambuf.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_stream_socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_stream_socket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_streambuf.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_streambuf.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_streambuf_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_streambuf_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/basic_waitable_timer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/basic_waitable_timer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffered_read_stream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffered_read_stream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffered_read_stream_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffered_read_stream_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffered_stream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffered_stream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffered_stream_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffered_stream_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffered_write_stream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffered_write_stream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffered_write_stream_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffered_write_stream_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/buffers_iterator.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/buffers_iterator.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/completion_condition.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/completion_condition.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/connect.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/connect.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/coroutine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/coroutine.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/datagram_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/datagram_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/deadline_timer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/deadline_timer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/deadline_timer_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/deadline_timer_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/addressof.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/addressof.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/array.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/array.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/array_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/array_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/assert.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/assert.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/atomic_count.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/atomic_count.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/base_from_completion_cond.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/base_from_completion_cond.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/bind_handler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/bind_handler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/buffer_resize_guard.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/buffer_resize_guard.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/buffer_sequence_adapter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/buffer_sequence_adapter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/buffered_stream_storage.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/buffered_stream_storage.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/call_stack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/call_stack.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/chrono_time_traits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/chrono_time_traits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/completion_handler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/completion_handler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/consuming_buffers.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/consuming_buffers.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/cstdint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/cstdint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/date_time_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/date_time_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/deadline_timer_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/deadline_timer_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/dependent_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/dependent_type.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/descriptor_ops.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/descriptor_ops.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/descriptor_read_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/descriptor_read_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/descriptor_write_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/descriptor_write_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/dev_poll_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/dev_poll_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/epoll_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/epoll_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/eventfd_select_interrupter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/eventfd_select_interrupter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/fd_set_adapter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/fd_set_adapter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/function.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/function.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/gcc_arm_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/gcc_arm_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/gcc_hppa_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/gcc_hppa_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/gcc_sync_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/gcc_sync_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/gcc_x86_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/gcc_x86_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/handler_alloc_helpers.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/handler_alloc_helpers.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/handler_cont_helpers.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/handler_cont_helpers.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/handler_invoke_helpers.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/handler_invoke_helpers.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/handler_tracking.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/handler_tracking.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/handler_type_requirements.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/handler_type_requirements.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/hash_map.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/hash_map.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/buffer_sequence_adapter.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/buffer_sequence_adapter.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/descriptor_ops.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/descriptor_ops.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/dev_poll_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/dev_poll_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/dev_poll_reactor.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/dev_poll_reactor.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/epoll_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/epoll_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/epoll_reactor.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/epoll_reactor.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/eventfd_select_interrupter.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/eventfd_select_interrupter.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/handler_tracking.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/handler_tracking.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/kqueue_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/kqueue_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/kqueue_reactor.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/kqueue_reactor.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/pipe_select_interrupter.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/pipe_select_interrupter.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_event.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_event.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_mutex.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_mutex.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_thread.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_thread.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_tss_ptr.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/posix_tss_ptr.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/reactive_descriptor_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/reactive_descriptor_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/reactive_serial_port_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/reactive_serial_port_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/reactive_socket_service_base.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/reactive_socket_service_base.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/resolver_service_base.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/resolver_service_base.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/select_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/select_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/select_reactor.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/select_reactor.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/service_registry.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/service_registry.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/service_registry.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/service_registry.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/signal_set_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/signal_set_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/socket_ops.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/socket_ops.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/socket_select_interrupter.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/socket_select_interrupter.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/strand_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/strand_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/strand_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/strand_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/task_io_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/task_io_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/task_io_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/task_io_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/throw_error.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/throw_error.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/timer_queue_ptime.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/timer_queue_ptime.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/timer_queue_set.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/timer_queue_set.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_event.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_event.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_handle_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_handle_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_io_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_io_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_io_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_io_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_serial_port_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_serial_port_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_socket_service_base.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_iocp_socket_service_base.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_mutex.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_mutex.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_object_handle_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_object_handle_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_static_mutex.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_static_mutex.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_thread.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_thread.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/win_tss_ptr.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/win_tss_ptr.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/winrt_ssocket_service_base.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/winrt_ssocket_service_base.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/winrt_timer_scheduler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/winrt_timer_scheduler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/winrt_timer_scheduler.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/winrt_timer_scheduler.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/impl/winsock_init.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/impl/winsock_init.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/io_control.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/io_control.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/keyword_tss_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/keyword_tss_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/kqueue_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/kqueue_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/limits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/limits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/local_free_on_block_exit.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/local_free_on_block_exit.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/macos_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/macos_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/noncopyable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/noncopyable.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_signal_blocker.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_signal_blocker.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_static_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_static_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/null_tss_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/null_tss_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/object_pool.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/object_pool.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/old_win_sdk_compat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/old_win_sdk_compat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/op_queue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/op_queue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/operation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/operation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/pipe_select_interrupter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/pipe_select_interrupter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/pop_options.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/pop_options.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_fd_set_adapter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_fd_set_adapter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_signal_blocker.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_signal_blocker.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_static_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_static_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/posix_tss_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/posix_tss_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/push_options.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/push_options.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_descriptor_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_descriptor_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_null_buffers_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_null_buffers_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_serial_port_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_serial_port_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_accept_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_accept_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_connect_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_connect_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_recv_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_recv_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_recvfrom_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_recvfrom_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_recvmsg_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_recvmsg_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_send_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_send_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_sendto_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_sendto_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_service_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactive_socket_service_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactor_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactor_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactor_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactor_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/reactor_op_queue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/reactor_op_queue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/regex_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/regex_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/resolve_endpoint_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/resolve_endpoint_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/resolve_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/resolve_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/resolver_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/resolver_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/resolver_service_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/resolver_service_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/scoped_lock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/scoped_lock.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/scoped_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/scoped_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/select_interrupter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/select_interrupter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/select_reactor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/select_reactor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/service_registry.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/service_registry.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/shared_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/shared_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/signal_blocker.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/signal_blocker.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/signal_handler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/signal_handler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/signal_init.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/signal_init.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/signal_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/signal_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/signal_set_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/signal_set_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/socket_holder.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/socket_holder.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/socket_ops.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/socket_ops.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/socket_option.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/socket_option.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/socket_select_interrupter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/socket_select_interrupter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/socket_types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/socket_types.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/solaris_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/solaris_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/static_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/static_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/std_event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/std_event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/std_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/std_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/std_static_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/std_static_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/std_thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/std_thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/strand_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/strand_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/task_io_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/task_io_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/task_io_service_operation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/task_io_service_operation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/task_io_service_thread_info.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/task_io_service_thread_info.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/thread_info_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/thread_info_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/throw_error.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/throw_error.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/throw_exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/throw_exception.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/timer_queue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/timer_queue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/timer_queue_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/timer_queue_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/timer_queue_ptime.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/timer_queue_ptime.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/timer_queue_set.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/timer_queue_set.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/timer_scheduler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/timer_scheduler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/timer_scheduler_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/timer_scheduler_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/tss_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/tss_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/type_traits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/type_traits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/variadic_templates.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/variadic_templates.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/wait_handler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/wait_handler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/wait_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/wait_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/weak_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/weak_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_fd_set_adapter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_fd_set_adapter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_fenced_block.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_fenced_block.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_handle_read_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_handle_read_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_handle_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_handle_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_handle_write_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_handle_write_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_io_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_io_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_null_buffers_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_null_buffers_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_operation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_operation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_overlapped_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_overlapped_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_overlapped_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_overlapped_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_serial_port_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_serial_port_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_accept_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_accept_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_connect_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_connect_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_recv_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_recv_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_recvfrom_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_recvfrom_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_recvmsg_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_recvmsg_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_send_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_send_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_service_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_socket_service_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_thread_info.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_iocp_thread_info.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_object_handle_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_object_handle_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_static_mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_static_mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/win_tss_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/win_tss_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winapi_thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winapi_thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_async_manager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_async_manager.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_async_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_async_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_resolve_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_resolve_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_resolver_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_resolver_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_socket_connect_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_socket_connect_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_socket_recv_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_socket_recv_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_socket_send_op.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_socket_send_op.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_ssocket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_ssocket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_ssocket_service_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_ssocket_service_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_timer_scheduler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_timer_scheduler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winrt_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winrt_utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/winsock_init.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/winsock_init.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/detail/wrapped_handler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/detail/wrapped_handler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/error.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/error.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/error_code.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/error_code.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/basic_endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/basic_endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/datagram_protocol.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/datagram_protocol.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/detail/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/detail/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/detail/impl/endpoint.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/detail/impl/endpoint.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/raw_protocol.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/raw_protocol.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/seq_packet_protocol.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/seq_packet_protocol.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/generic/stream_protocol.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/generic/stream_protocol.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/handler_alloc_hook.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/handler_alloc_hook.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/handler_continuation_hook.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/handler_continuation_hook.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/handler_invoke_hook.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/handler_invoke_hook.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/handler_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/handler_type.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/high_resolution_timer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/high_resolution_timer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/buffered_read_stream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/buffered_read_stream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/buffered_write_stream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/buffered_write_stream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/connect.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/connect.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/error.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/error.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/error_code.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/error_code.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/handler_alloc_hook.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/handler_alloc_hook.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/io_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/io_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/io_service.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/io_service.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/read.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/read.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/read_at.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/read_at.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/read_until.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/read_until.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/serial_port_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/serial_port_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/serial_port_base.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/serial_port_base.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/spawn.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/spawn.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/src.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/src.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/src.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/src.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/use_future.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/use_future.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/write.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/write.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/impl/write_at.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/impl/write_at.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/io_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/io_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/address.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/address.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/address_v4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/address_v4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/address_v6.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/address_v6.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/basic_endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/basic_endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver_entry.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver_entry.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver_iterator.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver_iterator.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver_query.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/basic_resolver_query.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/detail/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/detail/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/detail/impl/endpoint.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/detail/impl/endpoint.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/detail/socket_option.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/detail/socket_option.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/host_name.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/host_name.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/icmp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/icmp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/address.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/address.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/address.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/address.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v4.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v4.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v6.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v6.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v6.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/address_v6.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/basic_endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/basic_endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/impl/host_name.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/impl/host_name.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/multicast.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/multicast.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/resolver_query_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/resolver_query_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/resolver_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/resolver_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/tcp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/tcp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/udp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/udp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/unicast.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/unicast.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ip/v6_only.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ip/v6_only.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/is_read_buffered.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/is_read_buffered.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/is_write_buffered.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/is_write_buffered.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/local/basic_endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/local/basic_endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/local/connect_pair.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/local/connect_pair.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/local/datagram_protocol.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/local/datagram_protocol.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/local/detail/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/local/detail/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/local/detail/impl/endpoint.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/local/detail/impl/endpoint.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/local/stream_protocol.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/local/stream_protocol.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/placeholders.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/placeholders.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/posix/basic_descriptor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/posix/basic_descriptor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/posix/basic_stream_descriptor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/posix/basic_stream_descriptor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/posix/descriptor_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/posix/descriptor_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/posix/stream_descriptor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/posix/stream_descriptor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/posix/stream_descriptor_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/posix/stream_descriptor_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/raw_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/raw_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/read.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/read.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/read_at.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/read_at.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/read_until.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/read_until.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/seq_packet_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/seq_packet_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/serial_port.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/serial_port.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/serial_port_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/serial_port_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/serial_port_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/serial_port_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/signal_set.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/signal_set.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/signal_set_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/signal_set_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/socket_acceptor_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/socket_acceptor_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/socket_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/socket_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/spawn.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/spawn.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/ssl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/ssl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/steady_timer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/steady_timer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/strand.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/strand.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/stream_socket_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/stream_socket_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/streambuf.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/streambuf.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/system_error.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/system_error.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/system_timer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/system_timer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/time_traits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/time_traits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/unyield.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/unyield.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/use_future.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/use_future.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/version.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/version.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/wait_traits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/wait_traits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/waitable_timer_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/waitable_timer_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/basic_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/basic_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/basic_object_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/basic_object_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/basic_random_access_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/basic_random_access_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/basic_stream_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/basic_stream_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/object_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/object_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/object_handle_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/object_handle_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/overlapped_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/overlapped_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/random_access_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/random_access_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/random_access_handle_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/random_access_handle_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/stream_handle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/stream_handle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/windows/stream_handle_service.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/windows/stream_handle_service.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/write.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/write.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/write_at.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/write_at.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/asio/yield.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/asio/yield.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/blockingconcurrentqueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/blockingconcurrentqueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/concurrentqueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/concurrentqueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/json.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/json.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/microtar.c" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/microtar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/microtar.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/microtar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/.appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/.appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/.readthedocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/.readthedocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/attr.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/attr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/buffer_info.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/buffer_info.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/cast.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/cast.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/chrono.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/chrono.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/complex.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/complex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/class.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/class.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/descr.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/descr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/init.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/init.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/internals.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/internals.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/typeid.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/typeid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/eigen.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/eigen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/embed.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/embed.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/eval.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/eval.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/functional.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/functional.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/iostream.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/iostream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/numpy.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/numpy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/operators.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/operators.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/options.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/options.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/pybind11.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/pybind11.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/pytypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/pytypes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/stl.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/stl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/stl_bind.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/include/pybind11/stl_bind.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/pybind11/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/pybind11/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/pybind11/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/pybind11/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/pybind11/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/pybind11/_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/FindCatch.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/FindCatch.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/FindEigen3.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/FindEigen3.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/FindPythonLibsNew.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/FindPythonLibsNew.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/check-style.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/check-style.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/clang/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/clang/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/clang/LICENSE.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/clang/LICENSE.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/clang/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/clang/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/clang/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/clang/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/clang/cindex.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/clang/cindex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/clang/enumerations.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/clang/enumerations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/libsize.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/libsize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/mkdoc.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/mkdoc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/pybind11Config.cmake.in" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/pybind11Config.cmake.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/pybind11/tools/pybind11Tools.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/pybind11/tools/pybind11Tools.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/base64/base64.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/base64/base64.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/client.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/client.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/close.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/close.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/asio.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/asio.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/asio_ssl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/asio_ssl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/chrono.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/chrono.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/connection_hdl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/connection_hdl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/cpp11.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/cpp11.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/functional.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/functional.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/md5.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/md5.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/memory.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/memory.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/network.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/network.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/platforms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/platforms.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/random.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/random.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/regex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/regex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/stdint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/stdint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/system_error.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/system_error.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/time.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/time.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/common/type_traits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/common/type_traits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/concurrency/basic.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/concurrency/basic.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/concurrency/none.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/concurrency/none.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/asio.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/asio.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/asio_client.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/asio_client.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/asio_no_tls.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/asio_no_tls.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/asio_no_tls_client.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/asio_no_tls_client.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/boost_config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/boost_config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/core.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/core.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/core_client.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/core_client.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/debug.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/debug.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/debug_asio.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/debug_asio.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/debug_asio_no_tls.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/debug_asio_no_tls.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/minimal_client.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/minimal_client.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/config/minimal_server.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/config/minimal_server.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/connection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/connection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/connection_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/connection_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/endpoint_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/endpoint_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/error.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/error.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/extensions/extension.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/extensions/extension.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/extensions/permessage_deflate/disabled.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/extensions/permessage_deflate/disabled.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/extensions/permessage_deflate/enabled.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/extensions/permessage_deflate/enabled.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/frame.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/frame.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/constants.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/impl/parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/impl/parser.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/impl/request.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/impl/request.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/impl/response.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/impl/response.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/parser.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/request.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/request.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/http/response.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/http/response.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/impl/connection_impl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/impl/connection_impl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/impl/endpoint_impl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/impl/endpoint_impl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/impl/utilities_impl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/impl/utilities_impl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/logger/basic.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/logger/basic.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/logger/levels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/logger/levels.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/logger/stub.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/logger/stub.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/logger/syslog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/logger/syslog.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/message_buffer/alloc.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/message_buffer/alloc.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/message_buffer/message.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/message_buffer/message.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/message_buffer/pool.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/message_buffer/pool.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/processors/base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/processors/base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi00.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi00.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi07.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi07.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi08.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi08.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi13.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/processors/hybi13.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/processors/processor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/processors/processor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/random/none.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/random/none.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/random/random_device.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/random/random_device.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/roles/client_endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/roles/client_endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/roles/server_endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/roles/server_endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/server.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/server.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/sha1/sha1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/sha1/sha1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/connection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/connection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/security/base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/security/base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/security/none.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/security/none.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/security/tls.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/asio/security/tls.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/base/connection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/base/connection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/base/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/base/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/debug/base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/debug/base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/debug/connection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/debug/connection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/debug/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/debug/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/iostream/base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/iostream/base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/iostream/connection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/iostream/connection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/iostream/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/iostream/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/stub/base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/stub/base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/stub/connection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/stub/connection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/transport/stub/endpoint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/transport/stub/endpoint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/uri.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/uri.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/utf8_validator.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/utf8_validator.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/utilities.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/utilities.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/websocketpp/version.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/websocketpp/version.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ws_server.h" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ws_server.h" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ELF$torchtest.coverage" NAME="torchtest Coverage Results" MODIFIED="1553237151739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ELF$ex_elfpy.coverage" NAME="ex_elfpy Coverage Results" MODIFIED="1552967547729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1019109726">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="20" />
+          <entry key="sh" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="112" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="112" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1111264647">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="3" />
+          <entry key="project.open.time.37" value="4" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="2" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cc" value="2" />
+          <entry key="h" value="7" />
+          <entry key="make" value="6" />
+          <entry key="py" value="7703" />
+          <entry key="sh" value="449" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Bash" value="228" />
+          <entry key="C++" value="9" />
+          <entry key="PLAIN_TEXT" value="227" />
+          <entry key="Python" value="7703" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Makefile" value="3" />
+          <entry key="cc" value="1" />
+          <entry key="cmake" value="1" />
+          <entry key="h" value="7" />
+          <entry key="html" value="1" />
+          <entry key="make" value="2" />
+          <entry key="md" value="1" />
+          <entry key="png" value="1" />
+          <entry key="py" value="281" />
+          <entry key="pyi" value="3" />
+          <entry key="rst" value="2" />
+          <entry key="sh" value="39" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Bash" value="20" />
+          <entry key="C++" value="8" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="1" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="Python" value="281" />
+          <entry key="PythonStub" value="3" />
+          <entry key="ReST" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rts/game_MC/fpem_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+              <folding>
+                <element signature="e#124#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rts/game_MC/trunk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding>
+                <element signature="e#201#213#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_fpem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rlpytorch/trainer/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-391">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+              <folding>
+                <element signature="e#201#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fpem.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="71" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python3/dist-packages/aptdaemon/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20033">
+              <caret line="902" column="8" selection-start-line="902" selection-start-column="8" selection-end-line="902" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elf_python/GCWrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>softmax</find>
+      <find>optimizers</find>
+      <find>MiniRTSNet</find>
+      <find>net</find>
+      <find>self.net</find>
+      <find>decision_fix_weight</find>
+      <find>load_state_dict</find>
+      <find>self.relu</find>
+      <find>size(0)</find>
+      <find>forward</find>
+      <find>backward</find>
+      <find>num_minibatch</find>
+      <find>_request</find>
+      <find>_get_train_spec</find>
+      <find>Unrec</find>
+      <find>Unrecognized</find>
+      <find>bin</find>
+      <find>save</find>
+      <find>self._cb</find>
+      <find>_on_get_args</find>
+      <find>bk</find>
+      <find>keys_in_reply</find>
+      <find>weight_pi</find>
+      <find>Batch</find>
+      <find>cuda</find>
+      <find>data</find>
+      <find>detach</find>
+      <find>print</find>
+      <find>init_reward</find>
+      <find>avg</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/elf_python/assembler.py" />
+        <option value="$PROJECT_DIR$/elf_python/memory_receiver.py" />
+        <option value="$PROJECT_DIR$/elf_python/replier.py" />
+        <option value="$PROJECT_DIR$/elf_python/GCWrapper.py" />
+        <option value="$PROJECT_DIR$/rts/game_TD/model.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/rts/build/minirts/CMakeFiles/minirts.dir/build.make" />
+        <option value="$PROJECT_DIR$/rts/game_MC/python_wrapper.cc" />
+        <option value="$PROJECT_DIR$/elf_python/zmq_adapter.py" />
+        <option value="$PROJECT_DIR$/elf_python/utils.py" />
+        <option value="$PROJECT_DIR$/vendor/pybind11/include/pybind11/detail/common.h" />
+        <option value="$PROJECT_DIR$/ex_elfpy.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/model_interface.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/methods/value_matcher.py" />
+        <option value="$PROJECT_DIR$/atari/model.py" />
+        <option value="$PROJECT_DIR$/df_selfplay.py" />
+        <option value="$PROJECT_DIR$/go/game.py" />
+        <option value="$PROJECT_DIR$/eval.py" />
+        <option value="$PROJECT_DIR$/eval_minirts2.sh" />
+        <option value="$PROJECT_DIR$/rlpytorch/methods/fpem.py" />
+        <option value="$PROJECT_DIR$/rts/engine/common_loader.py" />
+        <option value="$PROJECT_DIR$/eval_minirts.sh" />
+        <option value="$PROJECT_DIR$/train_fpem.py" />
+        <option value="$PROJECT_DIR$/rts/game_MC/game.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/model_loader.py" />
+        <option value="$PROJECT_DIR$/train_minirts.sh" />
+        <option value="$PROJECT_DIR$/rts/game_MC/trunk.py" />
+        <option value="$PROJECT_DIR$/torchtest.py" />
+        <option value="$PROJECT_DIR$/rts/game_MC/torchtest.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/sampler/sample_methods.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/trainer/trainer.py" />
+        <option value="$PROJECT_DIR$/elf/utils_elf.py" />
+        <option value="$PROJECT_DIR$/rts/game_MC/model.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/methods/policy_gradient.py" />
+        <option value="$PROJECT_DIR$/rts/game_MC/fpem_model.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/methods/actor_critic.py" />
+        <option value="$PROJECT_DIR$/rlpytorch/runner/single_process.py" />
+        <option value="$PROJECT_DIR$/fpem.sh" />
+        <option value="$PROJECT_DIR$/selfplay_minirts.sh" />
+        <option value="$PROJECT_DIR$/rlpytorch/trainer/utils.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="95" />
+    <option name="y" value="15" />
+    <option name="width" value="1400" />
+    <option name="height" value="865" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ELF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ELF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ELF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ELF" type="462c0819:PsiDirectoryNode" />
+              <item name="fpem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ELF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ELF" type="462c0819:PsiDirectoryNode" />
+              <item name="rts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/leomessi/Install/PyWorksapce/ELF/rts/game_MC/game.py&#10;minirts&#9;null&#9;null&#10;_agent_name&#9;null&#9;null&#10;callback&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/fpem" />
+      <recent name="$PROJECT_DIR$/rts/game_CF" />
+      <recent name="$PROJECT_DIR$/rts/game_TD" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fpem" />
+      <recent name="$PROJECT_DIR$/rts/game_MC" />
+      <recent name="$PROJECT_DIR$/new_model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.torchtest">
+    <configuration name="ex_elfpy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ELF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex_elfpy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="torchtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ELF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rts/game_MC/torchtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ex_elfpy" />
+      <item itemvalue="Python.torchtest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.torchtest" />
+        <item itemvalue="Python.ex_elfpy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f513b4e-5806-4404-81d6-84ff75b26043" name="Default Changelist" comment="" />
+      <created>1551965192303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551965192303</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20342731" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39853558" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.39958158" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3294979" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14704256" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.458159" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31485355" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3294979" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/nn/modules/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="764" column="8" selection-start-line="764" selection-start-column="8" selection-end-line="764" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/methods/value_matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/serialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282">
+          <caret line="191" column="4" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="344" column="8" selection-start-line="344" selection-start-column="8" selection-end-line="344" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-2066100795/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="2816" column="8" selection-start-line="2816" selection-start-column="8" selection-end-line="2816" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/model_lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/methods/fpem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_TD/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval_minirts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/actor_critic_changed.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/nn/modules/linear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex_elfpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/runner/multi_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1379">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_minirts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="194" selection-start-column="194" selection-end-column="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/mixed_ai.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/model_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2038">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="175" column="18" selection-start-line="175" selection-start-column="14" selection-end-line="175" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/engine/common_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4600">
+          <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/torchtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/model_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2162">
+          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/model_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/sampler/sampler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-2066100795/torch/_C/_VariableFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="2661" column="8" selection-start-line="2661" selection-start-column="8" selection-end-line="2661" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="895" column="103" selection-start-line="895" selection-start-column="103" selection-end-line="895" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-2066100795/torch/_C/_TensorBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="1056" column="8" selection-start-line="1056" selection-start-column="8" selection-end-line="1056" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-2066100795/torch/_C/__init__/_TensorBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="1056" column="8" selection-start-line="1056" selection-start-column="8" selection-end-line="1056" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/sampler/sample_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elf_python/memory_receiver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2898">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="488" selection-start-line="488" selection-end-line="488" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/methods/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="101" column="35" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/torch/autograd/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/methods/policy_gradient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-388">
+          <caret line="66" column="53" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elf/utils_elf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="391" column="30" selection-start-line="391" selection-start-column="30" selection-end-line="391" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/methods/actor_critic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/trainer/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfplay_minirts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/runner/single_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <marker date="1553316743335" expanded="true" signature="2193:2874" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/record/fpem.txt" />
+    <entry file="file:///usr/lib/python3/dist-packages/aptdaemon/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20033">
+          <caret line="902" column="8" selection-start-line="902" selection-start-column="8" selection-end-line="902" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elf_python/GCWrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/methods/discounted_reward.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlpytorch/trainer/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#201#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fpem.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="71" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_fpem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/trunk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="e#201#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rts/game_MC/fpem_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+          <folding>
+            <element signature="e#124#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
