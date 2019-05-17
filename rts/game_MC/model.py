@@ -10,9 +10,9 @@ from copy import deepcopy
 from collections import Counter
 
 from rlpytorch import Model, ActorCritic
-from actor_critic_changed import ActorCriticChanged
-from forward_predict import ForwardPredict
-from trunk import MiniRTSNet
+# from actor_critic_changed import ActorCriticChanged
+# from forward_predict import ForwardPredict
+from rts.game_MC.trunk import MiniRTSNet
 
 class Model_ActorCritic(Model):
     def __init__(self, args):
@@ -32,6 +32,7 @@ class Model_ActorCritic(Model):
         else:
             linear_in_dim = last_num_channel * 25
 
+
         self.linear_policy = nn.Linear(linear_in_dim, params["num_action"])
         self.linear_value = nn.Linear(linear_in_dim, 1)
 
@@ -41,12 +42,13 @@ class Model_ActorCritic(Model):
         self.Wt2 = nn.Linear(linear_in_dim, linear_in_dim)
         self.Wt3 = nn.Linear(linear_in_dim, linear_in_dim)
 
-        self.softmax = nn.Softmax()
+        self.softmax = nn.Softmax(dim=-1)
 
     def get_define_args():
         return MiniRTSNet.get_define_args()
 
-    def forward(self, x):
+    def forward(self, x, cur_policy=None):
+
         if self.params.get("model_no_spatial", False):
             # Replace a complicated network with a simple retraction.
             # Input: batchsize, channel, height, width
@@ -62,7 +64,9 @@ class Model_ActorCritic(Model):
         h = self._var(h)
         policy = self.softmax(self.linear_policy(h))
         value = self.linear_value(h)
-        return dict(h=h, V=value, pi=policy, action_type=0)
+        res = dict(h=h, V=value, pi=policy, action_type=0)
+
+        return res
 
     def decision_fix_weight(self, h):
         # Copy linear policy and linear value
@@ -98,6 +102,6 @@ class Model_ActorCritic(Model):
 # if method is None, fall back to default mapping from key to method
 Models = {
     "actor_critic": [Model_ActorCritic, ActorCritic],
-    "actor_critic_changed": [Model_ActorCritic, ActorCriticChanged],
-    "forward_predict": [Model_ActorCritic, ForwardPredict]
+    # "actor_critic_changed": [Model_ActorCritic, ActorCriticChanged],
+    # "forward_predict": [Model_ActorCritic, ForwardPredict]
 }

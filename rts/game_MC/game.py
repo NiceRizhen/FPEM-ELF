@@ -4,12 +4,13 @@
 # This source code is licensed under the BSD-style license found in the
 # LICENSE file in the root directory of this source tree.
 
+import minirts
+from datetime import datetime
+
 import sys, os
 
 sys.path.append('../../')
 
-import minirts
-from datetime import datetime
 from rts.engine import CommonLoader
 from rlpytorch import ArgsProvider
 
@@ -42,6 +43,23 @@ class Loader(CommonLoader):
             return ["uloc", "tloc", "bt", "ct", "uloc_prob", "tloc_prob", "bt_prob", "ct_prob"]
         else:
             return []
+
+    def _get_fpem_train_spec(self):
+        keys = ["s", "last_r", "V", "terminal", "pi", "a", "s_pi", "p"]
+        return dict(
+            batchsize=self.args.batchsize,
+            input=dict(T=self.args.T, keys=set(keys + self._unit_action_keys())),
+            reply=None
+        )
+
+    def _get_fpem_actor_spec(self):
+        reply_keys = ["V", "pi", "a", "s_pi", "p"]
+
+        return dict(
+            batchsize=self.args.batchsize,
+            input=dict(T=1, keys=set(["s", "last_r", "terminal"])),
+            reply=dict(T=1, keys=set(reply_keys + self._unit_action_keys())),
+        )
 
     def _get_actor_spec(self):
         reply_keys = ["V", "pi", "a"]
