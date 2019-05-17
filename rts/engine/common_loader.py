@@ -133,6 +133,14 @@ class CommonLoader:
         pass
 
     @abc.abstractmethod
+    def _get_fpem_train_spec(self):
+        pass
+
+    @abc.abstractmethod
+    def _get_fpem_actor_spec(self):
+        pass
+
+    @abc.abstractmethod
     def _get_train_spec(self):
         pass
 
@@ -140,7 +148,6 @@ class CommonLoader:
     def _get_actor_spec(self):
         pass
 
-    # init GC just for training with a simple ai
     def initialize(self):
         co, GC, params = self._init_gc()
         args = self.args
@@ -166,6 +173,44 @@ class CommonLoader:
 
         return GCWrapper(GC, co, desc, gpu=args.gpu, use_numpy=False, params=params)
 
+    # specailly for SMv2 initialization.
+    def initialize_smv2(self):
+        args = self.args
+        player1_name = "sm"
+        player2_name = "oppo_pool"
+
+        co, GC, params = self._init_gc(player_names=[player1_name, player2_name])
+
+        desc = {}
+        # For actor model, no reward needed, we only want to get input and return distribution of actions.
+        # sampled action and and value will be filled from the reply.
+        desc["actor1"] = self._get_actor_spec()
+        desc["actor2"] = self._get_actor_spec()
+
+        desc["actor1"]["name"] = player1_name
+        desc["actor2"]["name"] = player2_name
+
+        if not args.actor_only:
+            # For training, we want input, action (filled by actor models), value (filled by actor models) and reward.
+            desc["train1"] = self._get_train_spec()
+            desc["train1"]["name"] = player1_name
+
+            desc["train2"] = self._get_train_spec()
+            desc["train2"]["name"] = player2_name
+
+        self.more_labels.add_labels(desc)
+
+        params.update(dict(
+            num_group=1 if args.actor_only else 2,
+            action_batchsize=int(desc["actor1"]["batchsize"]),
+            train_batchsize=int(desc["train1"]["batchsize"]) if not args.actor_only else None,
+            T=args.T,
+            model_no_spatial=args.model_no_spatial
+        ))
+
+        return GCWrapper(GC, co, desc, gpu=args.gpu, use_numpy=False, params=params)
+
+    # SMv1 and oppo_pool will use this function.
     def initialize_selfplay(self):
         args = self.args
         reference_name = "reference"
@@ -176,8 +221,6 @@ class CommonLoader:
         desc = {}
         # For actor model, no reward needed, we only want to get input and return distribution of actions.
         # sampled action and and value will be filled from the reply.
-
-        # Firstly, we init 2 players actor for getting samples
         desc["actor0"] = self._get_actor_spec()
         desc["actor1"] = self._get_actor_spec()
 
@@ -201,44 +244,42 @@ class CommonLoader:
 
         return GCWrapper(GC, co, desc, gpu=args.gpu, use_numpy=False, params=params)
 
-    # Especially initialize GC for fpem algo
-    def initialize_fpemv1(self):
+    # specially for FPEM initialization.
+    def initialize_fpem(self):
 
-        # without loss of generalization, we set player0 using fpem model
         args = self.args
-        reference_name = "reference"
-        train_name = "train"
+        player1_name = "fpem"
+        player2_name = "oppo_pool"
 
-        co, GC, params = self._init_gc(player_names=[train_name, reference_name])
+        co, GC, params = self._init_gc(player_names=[player1_name, player2_name])
 
         desc = {}
         # For actor model, no reward needed, we only want to get input and return distribution of actions.
         # sampled action and and value will be filled from the reply.
+        desc["actor1"] = self._get_fpem_actor_spec()
+        desc["actor2"] = self._get_actor_spec()
 
-        # Firstly, we init 2 players actor for getting samples
-        desc["actor0"] = self._get_actor_spec()
-        desc["actor1"] = self._get_actor_spec()
+        desc["actor1"]["name"] = player1_name
+        desc["actor2"]["name"] = player2_name
 
-        desc["actor0"]["name"] = reference_name
-        desc["actor1"]["name"] = train_name
+        # For training, we want input, action (filled by actor models), value (filled by actor models) and reward.
+        desc["train1"] = self._get_fpem_actor_spec()
+        desc["train1"]["name"] = player1_name
 
-        if not args.actor_only:
-            # For training, we want input, action (filled by actor models), value (filled by actor models) and reward.
-            desc["train1"] = self._get_train_spec()
-            desc["train1"]["name"] = train_name
+        desc["train2"] = self._get_train_spec()
+        desc["train2"]["name"] = player2_name
 
         self.more_labels.add_labels(desc)
 
         params.update(dict(
             num_group=1 if args.actor_only else 2,
-            action_batchsize=int(desc["actor0"]["batchsize"]),
+            action_batchsize=int(desc["actor1"]["batchsize"]),
             train_batchsize=int(desc["train1"]["batchsize"]) if not args.actor_only else None,
             T=args.T,
             model_no_spatial=args.model_no_spatial
         ))
 
         return GCWrapper(GC, co, desc, gpu=args.gpu, use_numpy=False, params=params)
-
 
     def initialize_reduced_service(self):
         args = self.args
