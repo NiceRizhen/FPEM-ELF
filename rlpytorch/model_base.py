@@ -11,6 +11,17 @@ from torch.autograd import Variable
 from time import sleep
 from collections import OrderedDict
 
+import torch._utils
+try:
+    torch._utils._rebuild_tensor_v2
+except AttributeError:
+    def _rebuild_tensor_v2(storage, storage_offset, size, stride, requires_grad, backward_hooks):
+        tensor = torch._utils._rebuild_tensor(storage, storage_offset, size, stride)
+        tensor.requires_grad = requires_grad
+        tensor._backward_hooks = backward_hooks
+        return tensor
+    torch._utils._rebuild_tensor_v2 = _rebuild_tensor_v2
+
 class Model(nn.Module):
     ''' Base class for an RL model, it is a wrapper for ``nn.Module``'''
 
@@ -58,6 +69,7 @@ class Model(nn.Module):
             return Variable(x, volatile=self.volatile)
         else:
             return x
+
 
     def before_update(self):
         ''' Customized operations for each model before update. To be extended. '''

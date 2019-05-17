@@ -69,7 +69,6 @@ class ModelLoader:
         '''
         args = self.args
         args.params = params
-
         # Initialize models.
         model = self.model_class(args)
 
@@ -81,6 +80,162 @@ class ModelLoader:
             else:
                 omit_keys = []
             model.load(self.load, omit_keys=omit_keys)
+            print("Loaded = " + model.filename)
+
+        if self.onload is not None:
+            for func in self.onload.split(","):
+                try:
+                    getattr(model, func)()
+                    print("Called %s for model" % func)
+                except:
+                    print("calling func = %s failed!" % func)
+                    sys.exit(1)
+
+        if args.gpu is not None and args.gpu >= 0:
+            model.cuda(args.gpu)
+
+        return model
+
+class ModelLoader1:
+    ''' Class to load a previously saved model'''
+    def __init__(self, model_class, model_idx=None):
+        ''' Initialization, Accepted arguments:
+        ``load``:specify the model to be loaded
+        ``onload``: function to call after loading and arguments.
+        ``omit_keys``: to omit certain keys when loading, e.g. model can have extra keys if trained with additional tasks.
+        Loading will fail if extra keys are not put in ``omit_keys``
+        Args:
+            model_class(class): class name of the model
+            model_idx(int): index of the model to be loaded. There may be multiple model in an `ModelInterface` to load.
+        '''
+
+        self.model_class = model_class
+        self.model_idx = model_idx
+
+        define_args =[
+            ("load1", dict(type=str, help="load model", default=None)),
+            ("onload", dict(type=str, help="function(s) to call after loading. e.g., reset,zero_first_layer. These functions are specified in the model", default=None)),
+            ("omit_keys", dict(type=str, help="omitted keys when loading.", default=None)),
+        ]
+
+        self.define_args = define_args
+        if model_idx is not None:
+            self.define_args_final = [ (e[0] + str(model_idx), e[1]) for e in define_args ]
+        else:
+            self.define_args_final = self.define_args
+
+        combined_args = self.define_args_final + model_class.get_define_args() if hasattr(model_class, "get_define_args") else self.define_args_final
+
+        self.args = ArgsProvider(
+            call_from = self,
+            define_args = combined_args,
+            more_args = ["gpu"],
+            on_get_args = self._on_get_args
+        )
+
+    def _on_get_args(self, _):
+        '''Set all the arguments'''
+        for arg, arg_final in zip(self.define_args, self.define_args_final):
+            setattr(self, arg[0], getattr(self.args, arg_final[0]))
+
+    def load_model(self, params):
+        '''Actually loading the model with initialized args.
+           Call onload funtions if needed.
+
+        Args:
+            params(dict): additinoal parameters to be put into args.
+        '''
+        args = self.args
+        args.params = params
+        # Initialize models.
+        model = self.model_class(args)
+
+        if self.load1 is not None:
+            print("Load from " + self.load1)
+            if self.omit_keys is not None:
+                omit_keys = args.omit_keys.split(",")
+                print("Omit_keys = " + str(omit_keys))
+            else:
+                omit_keys = []
+            model.load(self.load1, omit_keys=omit_keys)
+            print("Loaded = " + model.filename)
+
+        if self.onload is not None:
+            for func in self.onload.split(","):
+                try:
+                    getattr(model, func)()
+                    print("Called %s for model" % func)
+                except:
+                    print("calling func = %s failed!" % func)
+                    sys.exit(1)
+
+        if args.gpu is not None and args.gpu >= 0:
+            model.cuda(args.gpu)
+
+        return model
+
+class ModelLoader2:
+    ''' Class to load a previously saved model'''
+    def __init__(self, model_class, model_idx=None):
+        ''' Initialization, Accepted arguments:
+        ``load``:specify the model to be loaded
+        ``onload``: function to call after loading and arguments.
+        ``omit_keys``: to omit certain keys when loading, e.g. model can have extra keys if trained with additional tasks.
+        Loading will fail if extra keys are not put in ``omit_keys``
+        Args:
+            model_class(class): class name of the model
+            model_idx(int): index of the model to be loaded. There may be multiple model in an `ModelInterface` to load.
+        '''
+
+        self.model_class = model_class
+        self.model_idx = model_idx
+
+        define_args =[
+            ("load2", dict(type=str, help="load model", default=None)),
+            ("onload", dict(type=str, help="function(s) to call after loading. e.g., reset,zero_first_layer. These functions are specified in the model", default=None)),
+            ("omit_keys", dict(type=str, help="omitted keys when loading.", default=None)),
+        ]
+
+        self.define_args = define_args
+        if model_idx is not None:
+            self.define_args_final = [ (e[0] + str(model_idx), e[1]) for e in define_args ]
+        else:
+            self.define_args_final = self.define_args
+
+        combined_args = self.define_args_final + model_class.get_define_args() if hasattr(model_class, "get_define_args") else self.define_args_final
+
+        self.args = ArgsProvider(
+            call_from = self,
+            define_args = combined_args,
+            more_args = ["gpu"],
+            on_get_args = self._on_get_args
+        )
+
+    def _on_get_args(self, _):
+        '''Set all the arguments'''
+        for arg, arg_final in zip(self.define_args, self.define_args_final):
+            setattr(self, arg[0], getattr(self.args, arg_final[0]))
+
+    def load_model(self, params):
+        '''Actually loading the model with initialized args.
+           Call onload funtions if needed.
+
+        Args:
+            params(dict): additinoal parameters to be put into args.
+        '''
+        args = self.args
+        args.params = params
+        # Initialize models.
+        model = self.model_class(args)
+
+        if self.load2 is not None:
+            print("Load from " + self.load2)
+            if self.omit_keys is not None:
+                omit_keys = args.omit_keys.split(",")
+                print("Omit_keys = " + str(omit_keys))
+            else:
+                omit_keys = []
+            model.load(self.load2, omit_keys=omit_keys)
             print("Loaded = " + model.filename)
 
         if self.onload is not None:
@@ -109,15 +264,17 @@ def load_env(envs, num_models=None, overrides=dict(), defaults=dict(), **kwargs)
     '''
     game = load_module(envs["game"]).Loader()
     model_file = load_module(envs["model_file"])
-    # TODO This is not good, need to fix.
+
     if len(model_file.Models[envs["model"]]) == 2:
         model_class, method_class = model_file.Models[envs["model"]]
         sampler_class = Sampler
     else:
-        model_class, method_class, sampler_class = model_file.Models[envs["model"]]
+        model_class, method_class, sampler_class = model_file.Models[envs["model"]]   # envs["model"] = "actor_critic"
 
     defaults.update(getattr(model_file, "Defaults", dict()))
     overrides.update(getattr(model_file, "Overrides", dict()))
+
+    print(defaults.keys())
 
     method = method_class()
     sampler = sampler_class()
@@ -130,6 +287,56 @@ def load_env(envs, num_models=None, overrides=dict(), defaults=dict(), **kwargs)
         model_loaders = [ ModelLoader(model_class, model_idx=i) for i in range(num_models) ]
 
     env = dict(game=game, method=method, sampler=sampler, model_loaders=model_loaders, mi=mi)
+    env.update(kwargs)
+
+    parser = argparse.ArgumentParser()
+    all_args = ArgsProvider.Load(parser, env, global_defaults=defaults, global_overrides=overrides)
+    return  env, all_args
+
+def load_2models_env(envs, num_models=None, overrides=dict(), defaults=dict(), **kwargs):
+    ''' Load envs. envs will be specified as environment variables, more specifically, ``game``, ``model_file`` and ``model`` are required.
+    It's specially for training with different models
+
+    Returns:
+        env: dict of
+            ``game`` : game module
+            ``method``: Learning method used
+            ``model_loaders``: loaders for model
+        all_args: loaded arguments from `ArgsPrivider`
+    '''
+    game = load_module(envs["game"]).Loader()
+    model_file1 = load_module(envs["model_file1"])
+    model_file2 = load_module(envs["model_file2"])
+
+    if len(model_file1.Models[envs["model"]]) == 2:
+        model_class1, method_class1 = model_file1.Models[envs["model"]]
+        sampler_class1 = Sampler
+    else:
+        model_class1, method_class1, sampler_class1 = model_file1.Models[envs["model"]]   # envs["model"] = "actor_critic"
+
+    if len(model_file2.Models[envs["model"]]) == 2:
+        model_class2, method_class2 = model_file2.Models[envs["model"]]
+        sampler_class2 = Sampler
+    else:
+        model_class2, method_class2, sampler_class2 = model_file2.Models[envs["model"]]
+
+    # defaults.update(getattr(model_file, "Defaults", dict()))
+    # overrides.update(getattr(model_file, "Overrides", dict()))
+
+    method1 = method_class1()
+    sampler1 = sampler_class1()
+    method2 = method_class2()
+    sampler2 = sampler_class2()
+
+    mi1 = ModelInterface()
+    mi2 = ModelInterface()
+
+    # You might want multiple models loaded.
+
+    model_loaders = [ ModelLoader1(model_class1), ModelLoader2(model_class2),]
+
+    env = dict(game=game, method1=method1, sampler1=sampler1, method2=method2, sampler2=sampler2,
+               model_loaders=model_loaders, mi1=mi1, mi2=mi2)
     env.update(kwargs)
 
     parser = argparse.ArgumentParser()
