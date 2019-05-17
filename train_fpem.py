@@ -14,6 +14,11 @@ from datetime import datetime
 import sys
 import os
 
+import random
+
+random.seed(7)
+
+os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 from rlpytorch import *
 
 # in this main page we init some settings for game context and then run it!
@@ -26,7 +31,7 @@ if __name__ == '__main__':
     evaluator = Evaluator(stats=False, verbose=verbose)
     env, all_args = load_env(os.environ, trainer=trainer, runner=runner, evaluator=evaluator)
 
-    GC = env["game"].initialize_fpemv1()
+    GC = env["game"].initialize_fpem()
 
     model = env["model_loaders"][0].load_model(GC.params)
     env["mi"].add_model("model", model, opt=True)

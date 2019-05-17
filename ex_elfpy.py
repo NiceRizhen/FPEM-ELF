@@ -3,10 +3,9 @@
 #
 # This source code is licensed under the BSD-style license found in the
 # LICENSE file in the root directory of this source tree.
-# -*- coding: utf-8 -*-
-#import torch
+
+import torch
 from elf_python import GCWrapper, Simulator
-import numpy as np
 import random
 import tqdm
 
@@ -64,9 +63,8 @@ class Trainer:
 
     def actor(self, cpu_batch, gpu_batch):
         # Random
-        batchsize = cpu_batch[0][b"s"].size(0)
-        #action = torch.IntTensor(batchsize)
-        action = np.zeros([batchsize], dtype=np.int32)
+        batchsize = cpu_batch[0]["s"].size(0)
+        action = torch.IntTensor(batchsize)
         for i in range(batchsize):
             action[i] = random.randint(0, 1)
         return dict(a = action)

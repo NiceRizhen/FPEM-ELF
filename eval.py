@@ -15,6 +15,8 @@ import os
 from rlpytorch import load_env, Evaluator, ArgsProvider, EvalIters
 
 if __name__ == '__main__':
+
+
     evaluator = Evaluator(stats=False)
     eval_iters = EvalIters()
     env, args = load_env(os.environ, overrides=dict(actor_only=True), evaluator=evaluator, eval_iters=eval_iters)
@@ -22,6 +24,7 @@ if __name__ == '__main__':
     GC = env["game"].initialize()
 
     model = env["model_loaders"][0].load_model(GC.params)
+    print("This model has %d steps" % model.step)
     env["mi"].add_model("actor", model, cuda=not args.gpu is None, gpu_id=args.gpu)
     env["mi"]["actor"].eval()
 
@@ -29,7 +32,7 @@ if __name__ == '__main__':
         reply = evaluator.actor(batch)
         '''
         s = batch["s"][0][0]
-        seq = batch["se q"][0][0]
+        seq = batch["seq"][0][0]
         for i in range(s.size(0)):
             print("[seq=%d][c=%d]: %s" % (seq, i, str(s[i])))
         print("[seq=%d]: %s" % (seq, str(reply["pi"][0])))
@@ -46,6 +49,6 @@ if __name__ == '__main__':
     evaluator.episode_start(0)
 
     for n in eval_iters.iters():
-        GC.Run()
+        GC.Run(cur_policy=0)
     GC.Stop()
 

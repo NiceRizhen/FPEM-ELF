@@ -7,11 +7,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-'''
-  Here is the entrance to the game env.
-  We can
-'''
-
 from datetime import datetime
 import sys
 import os
@@ -23,9 +18,11 @@ if __name__ == '__main__':
     runner = SingleProcessRun()
     env, all_args = load_env(os.environ, trainer=trainer, runner=runner)
 
-    GC = env["game"].initialize()
+    GC = env["game"].initialize_fpem()
 
     model = env["model_loaders"][0].load_model(GC.params)
+    print(GC.params.keys())
+
     env["mi"].add_model("model", model, opt=True)
     env["mi"].add_model("actor", model, copy=True, cuda=all_args.gpu is not None, gpu_id=all_args.gpu)
 
@@ -33,8 +30,7 @@ if __name__ == '__main__':
 
     GC.reg_callback("train", trainer.train)
     GC.reg_callback("actor", trainer.actor)
-    runner.setup(GC, episode_summary=trainer.episode_summary,
-                episode_start=trainer.episode_start)
+    runner.setup(GC, episode_summary=trainer.episode_summary, episode_start=trainer.episode_start)
 
     runner.run()
 

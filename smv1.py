@@ -7,11 +7,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import argparse
-from datetime import datetime
-
-import sys
 import os
+import torch
+import random
+import numpy as np
+
+random.seed(7)
+torch.manual_seed(7)
+torch.cuda.manual_seed(7)
+np.random.seed(7)
 
 from rlpytorch import *
 
